@@ -8,7 +8,7 @@
     display:flex;
     justify-content: center;
     gap: 13rem;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 99;
     
@@ -43,7 +43,7 @@
 /*Estilo de Hero*/
 
 .hero{
-    height: 100vh;
+    height: 100%;
     background: url("https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?_gl=1*1dtqtny*_ga*MTA1MjYwODgyLjE3NTAxMjQ4MjA.*_ga_8JE65Q40S6*czE3NTAxOTg0NjQkbzQkZzEkdDE3NTAxOTg0ODgkajM2JGwwJGgw") no-repeat center center/cover;
     display: flex;
     color:rgb(255, 253, 248);
@@ -61,54 +61,63 @@
     position: absolute;
 }
 
-.hero .content-hero {
+.hero .content-hero .contenido_1{
     max-width: 80%;
     position: relative;
     z-index: 99;
+    margin: auto;
+    background-color:rgba(85, 167, 103, 0.575);
+    padding: 5rem;
+    margin-top: 5rem;
+    border-radius: 3rem;
+    display: flex;
     
 }
 
-.hero .content-hero p{
+.hero .content-hero h1{
     font-size: 3rem;
     text-align: justify;
 }
-
-.hero .content-hero  .localizacion{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        gap: 1rem;
-
-    }
-
-
-.hero .content-hero .localizacion .icono-locacion{
-    font-size: 2rem;
-    
+.hero .content-hero p{
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
-.hero .content-hero .contac {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 1.2rem;
+.hero .content-hero .contenido_1 .imagen_gana img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 100%;
 }
 
-.hero .content-hero .contac .btn-contac{
+/*Estilo del segundo contenido */
+.hero .content-hero .contenido_2{
+    max-width: 80%;
+    position: relative;
+    z-index: 99;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color:rgba(85, 167, 103, 0.575);
+    padding: 5rem;
+    display:flex;
+    border-radius: 3rem;
+}
 
+.hero .content-hero h1{
+    font-size: 3rem;
+    text-align: justify;
+}
+.hero .content-hero p{
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: justify;
     
-    color: rgb(252, 251, 250);
-    padding:  10px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
 } 
 
-.hero .content-hero .contac .btn-contac:hover{
-    background-color: aliceblue;
-    color: black;
-} 
+.hero .content-hero .contenido_2 .imagen_gana img{
+    width: 30rem;
+    height: 30rem;
+}
 
 /*responsive desyng*/
 
@@ -142,7 +151,9 @@
         margin-top: 50%;
 
     }
-     .hero .content-hero .localizacion .icono-locacion{
+
+
+    .hero .content-hero .localizacion .icono-locacion{
         font-size: 1rem;
     }
 
