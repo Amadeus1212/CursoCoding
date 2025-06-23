@@ -1,17 +1,52 @@
-.hero{
+.hero-section{
     height: 100vh;
     background: url("https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg") no-repeat center center/cover;
-    display: flex;
-    color:rgb(255, 253, 248);
+    display: flex;    
     position: relative;
     align-items: center;
     justify-content: center;
 
 }
 
-.hero .overlay{
+.hero-section .overlay{
     width: 100%;
     height: 100%;
     background-color: rgba(32, 32, 32, 0.692);
     position: absolute;
 }
+
+.hero-section .hero-content{
+
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 20px;
+    padding: 30px;
+    color: rgb(254, 253, 252);
+    background:  linear-gradient(120deg, rgba(0, 0, 0, 0.488),rgba(114, 190, 202, 0.574));
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.hero-section .hero-content.visible{
+    opacity:1;
+    transform: translateY(10px);
+}
+
+.hero-section .hero-content p{
+    text-align: justify;
+}
+
+.hero-section .hero-content .btn-custom{
+    background:  linear-gradient(50deg, rgba(81, 198, 233, 0.241),rgba(231, 211, 211, 0.344));
+    border: none;
+    color: rgb(74, 220, 233);
+    font-weight: bold;
+}
+
+.hero-section .hero-content .btn-custom:hover{
+    opacity: 0.8;
+}
+
