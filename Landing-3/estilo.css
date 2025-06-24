@@ -1,0 +1,19 @@
+.navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+.cart-icon {
+      font-size: 1.4rem;
+      color: #333;
+      cursor: pointer;
+    }
+
+.cart-icon:hover {
+      color: #007bff;
+    }
+
+.hero-section {
+  height: 50vh; /* ocupa toda la altura de la pantalla */
+  overflow: hidden;
+}
